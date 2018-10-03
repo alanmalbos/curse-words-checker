@@ -15,8 +15,10 @@ def check_text(text_to_check):
 	connection.close()
 	if output == "true":
 		print("This text contains curse words!")
-	else:
+	elif output == "false":
 		print("Everything is OK!")
+	else:
+		print("We had a problem to read this file!")
 
 # call the firt function to test a text
 read_file()
